@@ -1,0 +1,89 @@
+/* using max-width 100% allows the site to dynamicly expand / restrict as needed*/
+html {max-width: 100%; margin: 0 auto; background: rgb(221, 221, 221);}
+main {font-family: Arial; margin: -8;}
+
+/*topBar*/
+.topBar {z-index: 9999; position: fixed; top: -20px; width: 100%; margin-left: -30px; background-color: black; overflow: hidden; height: 7%;} 
+.topBar li, .topBar a {display: inline-block; margin: 0px 0px 0px 5px; color: rgb(221, 221, 221); padding: 14px 0px; font-size: 20px; font-weight: bold; border: 10px solid black; width: 110px; text-align: center; border: 0;}
+.topBar img {margin: 20px 5px 0px 5px;}
+
+.topBar li:hover, .topBar a:hover {color: rgb(170, 0, 136); background-color: rgb(221, 221, 221);}
+.topBar img:hover {content: url(Images/LogoInverted.png);}
+
+/*Image + overlay*/
+.bewerbungsHomepage_Background {width: 100%; height: 40%; position: relative;}
+.bewerbungsHomepage_BackgroundIMG {width: 100%; height: 100%; padding-top: 45px;}
+.bewerbungsBild {position: absolute; bottom: -45px; left: 300px;}
+
+/*all*/
+h1 {color: rgb(170, 0, 136); text-align: center; font-size: 36px;}
+h2 {color: rgb(170, 0, 136); text-align: center; font-size: 36px;}
+/*Border-Radius 50% makes it a circle, the order makes it appear right of the text*/
+.circle {width: 20; height: 20; border-radius: 50%; background-color: rgb(170, 0, 136); margin: 0 0 0 29; order: 1;}
+.circleSpecial {width: 20; height: 20; border-radius: 50%; background-color: gold; margin: 0 0 0 29; order: 1; z-index: 8888; outline-style:solid; outline-color: rgb(170, 0, 136);}
+ul {list-style: none;}
+
+/*Meine Fähigkeiten*/
+figure {text-align: center; position: relative; top: 60px;}
+figure figcaption {font-size: 42px; font-weight: bold; color: rgb(170, 0, 136);}
+.barA {transform: translateY(60px); font-size: 22px;}
+.barB {transform: translateY(120px); font-size: 22px;}
+.barC {transform: translateY(180px); font-size: 22px;}
+.barD {transform: translateY(240px); font-size: 22px;}
+.barE {transform: translateY(300px); font-size: 22px;}
+.barF {transform: translateY(360px); font-size: 22px;}
+
+/*Sprachkenntnisse*/
+figure {text-align: center; position: relative; top: 60px;}
+figure figcaption {font-size: 42px; font-weight: bold; color: rgb(170, 0, 136);}
+.barG {transform: translateY(60px); font-size: 22px;}
+.barH {transform: translateY(120px); font-size: 22px;}
+.barI {transform: translateY(180px); font-size: 22px;}
+
+/*BarColor*/
+.barColorBackground {fill: rgb(202, 158, 202); position: relative;}
+.barColorForeground {fill: rgb(170, 0, 136); position: relative; transition: width 2.5s ease-in-out;}
+
+/*Persönliche Date*/
+.persönlicheDaten {text-align: center; position: static;}
+.persönlicheDatenLinks {text-align: right; font-weight: bold; margin: -20px 0px 0px 0px;}
+.persönlicheDatenLinks li {margin: 0px 36px 0px 0px;}
+.persönlicheDatenRechts {text-align: left; margin: -20px 0px 0px 0px;}
+.persönlicheDaten ul {display: inline-block; font-size: 22px;}
+.percentage {font-size: 16px; fill: white;}
+.verticalLineR {border-right: 1px solid rgb(170, 0, 136); height: 110px; right: 50%; position: absolute;}
+.verticalLineL {border-left: 1px solid rgb(170, 0, 136); height: 110px; left: 50%; position: absolute;}
+
+/*Praktika*/
+.praktika {position: relative; margin: 150px 0px 0px 0px;}
+.praktikaList{position: relative;}
+.praktikaList > ul {display: inline-block;}
+.praktikaDates {text-align: right; font-size: 22px; font-weight: bold; margin: 16 35 0 695;}
+.marginDatesA0, .marginDatesA1, .marginDatesA2, .marginDatesA3 {display: flex; align-items: center;}
+.marginDatesA1, .marginDatesA2, .marginDatesA3 {margin: 159 0 0 0;}
+.praktikaHeader{position: relative;}
+.praktikaHeader > li {text-align: left; font-size: 22px; font-weight: bold; margin: 0 0 50 0;}
+.praktikaHeader li ul {font-size: 22px; font-weight: normal; list-style: disc;}
+
+/*Schulbildung*/
+.schulbildung {position: relative; margin: 150 0 0 0;}
+.schulbildungList > ul {display: inline-block;}
+.schulbildungDates {text-align: right; font-size: 22px; font-weight: bold; margin: 16 35 0 695; position: absolute;}
+.marginDatesB0, .marginDatesB1, .marginDatesB2, .marginDatesB3, .marginDatesB4, .marginDatesB5, .marginDatesB6 {display: flex; align-items: center;}
+.marginDatesB1, .marginDatesB2, .marginDatesB3, .marginDatesB4, .marginDatesB5, .marginDatesB6 {margin: 79 0 0 0;}
+.marginDatesB3 {margin: 80 0 0 100;}
+.schulbildungHeader > li {text-align: left; font-size: 22px; font-weight: bold; margin: 0 0 79 0;}
+.verticalLineLL {border-left: 2px solid rgb(170, 0, 136); height: 700px; left: 50%; position: absolute;}
+
+/*Hobbys und Interesse*/
+.hobbys {position: relative; margin: 750px 0 0 0;}
+.hobbysContainer {display: flex; justify-content: center; gap: 20px;}
+.hobbyimg {display: flex; flex-direction: column; align-items: center; margin: 20px; justify-content: flex-end;}
+.hobbyimg img {height: 70px; width: 70px; order: 2;}
+.hobbyimg p {margin-top: 10px; text-align: center; order: 1; font-weight: bold; max-width: 100px;}
+
+/*Kontakt*/
+.kontaktContainer {display: flex; justify-content: space-between; align-items: top; position: absolute; left: 50%; top: 40%;  transform: translate(-50%, -50%);}
+.kontaktContainer p {font-weight: bold;}
+.kontaktContainer ul {padding: 0; margin: 0;}
+.kontakt {text-align: center; width: 250px; color: rgb(221, 221, 221); font-size: 22px; margin: 0 20 0 20;}
